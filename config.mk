@@ -41,3 +41,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/pixelstyle/overlay
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/pixelstyle/overlay/common/
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/pixelstyle/etc/default-permissions/com.google.android.markup.xml:system/etc/default-permissions/com.google.android.markup.xml
