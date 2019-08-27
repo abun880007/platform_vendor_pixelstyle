@@ -16,9 +16,7 @@
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
     ScreenRecorder \
-    SoundPickerPrebuilt \
-    WallpaperPickerGooglePrebuilt \
-    MarkupGoogle
+    SoundPickerPrebuilt
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
 PRODUCT_PACKAGES += \
@@ -39,14 +37,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.ime.theme_id=5
 
-# Markup libs
-PRODUCT_COPY_FILES += \
-    vendor/pixelstyle/lib/libsketchology_native.so:system/lib/libsketchology_native.so
-
-ifeq ($(TARGET_GAPPS_ARCH),arm64)
-PRODUCT_COPY_FILES += \
-    vendor/pixelstyle/lib64/libsketchology_native.so:system/lib64/libsketchology_native.so
-endif
 
 # Include package overlays
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/pixelstyle/overlay
