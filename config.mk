@@ -15,7 +15,6 @@
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    ScreenRecorder \
     SoundPickerPrebuilt
 
 ifeq ($(TARGET_GAPPS_ARCH),arm64)
